@@ -8,7 +8,7 @@ html{
 }
 body {
   background-color: rgba(5,5,5,1);
-  background-image: url("../assets/Background.jpg");
+  background-image: url("../assets/Home/Background.jpg");
   background-size: cover;
   background-repeat: repeat-y;
 }
@@ -1117,26 +1117,3 @@ a {
 	div.parallax {display: none;}
 	section.nav{display:none;}
 }
-
-/*scrollbar*/
-
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #888; 
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-}
-

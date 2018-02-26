@@ -1,15 +1,6 @@
-//var feed = new Instafeed({
-//  get: 'tagged',
-//  tagName: 'dog',
-//  userId: '1642413801',
-//  clientId: '8451dbbe5f324e66b5db2678191999b9',
-//  accessToken: '1642413801.1677ed0.2fd901b9b5774cb383d81fae0d5106f4',
-//  sortBy: 'most-recent',
-//});
-//feed.run();
            var imgPaths = [
-               ['./assets/layer5.png',400],
-               ['./assets/flicker.png',300]];
+               ['./assets/Home/layer5.png',400],
+               ['./assets/Home/flicker.png',300]];
            var imgO = new Array();
            var currImg = 0;
            var currDispTime = imgPaths[0][1];
@@ -29,6 +20,17 @@ grained("#container", options);
 /*
 background-color :rgb(204, 204, 204)
 */
+var feed = new Instafeed({
+  get: 'user',
+  userId: '1642413801',
+  clientId: '8451dbbe5f324e66b5db2678191999b9',
+  accessToken: '1642413801.1677ed0.2fd901b9b5774cb383d81fae0d5106f4',
+  sortBy: 'most-recent',
+  resolution: 'low_resolution',
+  limit: '1',
+});
+feed.run();
+
 
 document.querySelector('meta[name="viewport"]').setAttribute('content', 'width='+siteWidth+', initial-scale='+scale+'');
 
@@ -50,4 +52,3 @@ document.querySelector('meta[name="viewport"]').setAttribute('content', 'width='
                imgObj.src = imgO[currImg].src;
                swapImg();
            }
-
